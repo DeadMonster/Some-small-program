@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WFService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.250:8888/WFService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.250:8888/WFService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWFService_GetAllDeviceOperate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDeviceOperate" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetAllDeviceOperate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDeviceOperateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetDeviceOperateByOperateID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceOperateByOperateID" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetDeviceOperateByOperateID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceOperateByOperateIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetAllSystemOperate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSystemOperate" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetAllSystemOperate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSystemOperateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetAllManageOperate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllManageOperate" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetAllManageOperate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllManageOperateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddPlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlan" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddPlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdatePlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePlan" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdatePlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_DeletePlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlan" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_DeletePlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanListByPlanType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanListByPlanType" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanListByPlanType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanListByPlanTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanByPlanID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanByPlanID" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanByPlanID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanByPlanIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddDatePlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDatePlan" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddDatePlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDatePlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdateDatePlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDatePlan" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdateDatePlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDatePlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetDatePlanByPlanID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatePlanByPlanID" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetDatePlanByPlanID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatePlanByPlanIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanRunRunStepByPlanID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRunRunStepByPlanID" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanRunRunStepByPlanID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRunRunStepByPlanIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanRunByPlanID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRunByPlanID" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanRunByPlanID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRunByPlanIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddPlanRun_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlanRun" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddPlanRun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlanRunResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdatePlanRun_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePlanRun" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdatePlanRun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePlanRunResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanRunStepByRunID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRunStepByRunID" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanRunStepByRunID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRunStepByRunIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddPlanRunStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlanRunStep" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddPlanRunStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlanRunStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdatePlanRunStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePlanRunStep" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdatePlanRunStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePlanRunStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetAllTaskHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTaskHistory" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetAllTaskHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTaskHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetTaskHistoryByExecutionUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaskHistoryByExecutionUser" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetTaskHistoryByExecutionUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaskHistoryByExecutionUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddTaskHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTaskHistory" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_AddTaskHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTaskHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdateTaskHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTaskHistory" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_UpdateTaskHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTaskHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanCurrentStepByPlanType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanCurrentStepByPlanType" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanCurrentStepByPlanType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanCurrentStepByPlanTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanAndPlanRun_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanAndPlanRun" />
+  </wsdl:message>
+  <wsdl:message name="IWFService_GetPlanAndPlanRun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanAndPlanRunResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWFService">
+    <wsdl:operation name="GetAllDeviceOperate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetAllDeviceOperate" message="tns:IWFService_GetAllDeviceOperate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetAllDeviceOperateResponse" message="tns:IWFService_GetAllDeviceOperate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceOperateByOperateID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetDeviceOperateByOperateID" message="tns:IWFService_GetDeviceOperateByOperateID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetDeviceOperateByOperateIDResponse" message="tns:IWFService_GetDeviceOperateByOperateID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSystemOperate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetAllSystemOperate" message="tns:IWFService_GetAllSystemOperate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetAllSystemOperateResponse" message="tns:IWFService_GetAllSystemOperate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllManageOperate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetAllManageOperate" message="tns:IWFService_GetAllManageOperate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetAllManageOperateResponse" message="tns:IWFService_GetAllManageOperate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/AddPlan" message="tns:IWFService_AddPlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/AddPlanResponse" message="tns:IWFService_AddPlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/UpdatePlan" message="tns:IWFService_UpdatePlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/UpdatePlanResponse" message="tns:IWFService_UpdatePlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/DeletePlan" message="tns:IWFService_DeletePlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/DeletePlanResponse" message="tns:IWFService_DeletePlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanListByPlanType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetPlanListByPlanType" message="tns:IWFService_GetPlanListByPlanType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetPlanListByPlanTypeResponse" message="tns:IWFService_GetPlanListByPlanType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanByPlanID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetPlanByPlanID" message="tns:IWFService_GetPlanByPlanID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetPlanByPlanIDResponse" message="tns:IWFService_GetPlanByPlanID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDatePlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/AddDatePlan" message="tns:IWFService_AddDatePlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/AddDatePlanResponse" message="tns:IWFService_AddDatePlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDatePlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/UpdateDatePlan" message="tns:IWFService_UpdateDatePlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/UpdateDatePlanResponse" message="tns:IWFService_UpdateDatePlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatePlanByPlanID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetDatePlanByPlanID" message="tns:IWFService_GetDatePlanByPlanID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetDatePlanByPlanIDResponse" message="tns:IWFService_GetDatePlanByPlanID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRunRunStepByPlanID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetPlanRunRunStepByPlanID" message="tns:IWFService_GetPlanRunRunStepByPlanID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetPlanRunRunStepByPlanIDResponse" message="tns:IWFService_GetPlanRunRunStepByPlanID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRunByPlanID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetPlanRunByPlanID" message="tns:IWFService_GetPlanRunByPlanID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetPlanRunByPlanIDResponse" message="tns:IWFService_GetPlanRunByPlanID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPlanRun">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/AddPlanRun" message="tns:IWFService_AddPlanRun_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/AddPlanRunResponse" message="tns:IWFService_AddPlanRun_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePlanRun">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/UpdatePlanRun" message="tns:IWFService_UpdatePlanRun_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/UpdatePlanRunResponse" message="tns:IWFService_UpdatePlanRun_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRunStepByRunID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetPlanRunStepByRunID" message="tns:IWFService_GetPlanRunStepByRunID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetPlanRunStepByRunIDResponse" message="tns:IWFService_GetPlanRunStepByRunID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPlanRunStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/AddPlanRunStep" message="tns:IWFService_AddPlanRunStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/AddPlanRunStepResponse" message="tns:IWFService_AddPlanRunStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePlanRunStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/UpdatePlanRunStep" message="tns:IWFService_UpdatePlanRunStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/UpdatePlanRunStepResponse" message="tns:IWFService_UpdatePlanRunStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTaskHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetAllTaskHistory" message="tns:IWFService_GetAllTaskHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetAllTaskHistoryResponse" message="tns:IWFService_GetAllTaskHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskHistoryByExecutionUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetTaskHistoryByExecutionUser" message="tns:IWFService_GetTaskHistoryByExecutionUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetTaskHistoryByExecutionUserResponse" message="tns:IWFService_GetTaskHistoryByExecutionUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTaskHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/AddTaskHistory" message="tns:IWFService_AddTaskHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/AddTaskHistoryResponse" message="tns:IWFService_AddTaskHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTaskHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/UpdateTaskHistory" message="tns:IWFService_UpdateTaskHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/UpdateTaskHistoryResponse" message="tns:IWFService_UpdateTaskHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanCurrentStepByPlanType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetPlanCurrentStepByPlanType" message="tns:IWFService_GetPlanCurrentStepByPlanType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetPlanCurrentStepByPlanTypeResponse" message="tns:IWFService_GetPlanCurrentStepByPlanType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanAndPlanRun">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWFService/GetPlanAndPlanRun" message="tns:IWFService_GetPlanAndPlanRun_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWFService/GetPlanAndPlanRunResponse" message="tns:IWFService_GetPlanAndPlanRun_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWFService" type="tns:IWFService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllDeviceOperate">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetAllDeviceOperate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceOperateByOperateID">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetDeviceOperateByOperateID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSystemOperate">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetAllSystemOperate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllManageOperate">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetAllManageOperate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPlan">
+      <soap:operation soapAction="http://tempuri.org/IWFService/AddPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePlan">
+      <soap:operation soapAction="http://tempuri.org/IWFService/UpdatePlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlan">
+      <soap:operation soapAction="http://tempuri.org/IWFService/DeletePlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanListByPlanType">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetPlanListByPlanType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanByPlanID">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetPlanByPlanID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDatePlan">
+      <soap:operation soapAction="http://tempuri.org/IWFService/AddDatePlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDatePlan">
+      <soap:operation soapAction="http://tempuri.org/IWFService/UpdateDatePlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatePlanByPlanID">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetDatePlanByPlanID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRunRunStepByPlanID">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetPlanRunRunStepByPlanID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRunByPlanID">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetPlanRunByPlanID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPlanRun">
+      <soap:operation soapAction="http://tempuri.org/IWFService/AddPlanRun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePlanRun">
+      <soap:operation soapAction="http://tempuri.org/IWFService/UpdatePlanRun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRunStepByRunID">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetPlanRunStepByRunID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPlanRunStep">
+      <soap:operation soapAction="http://tempuri.org/IWFService/AddPlanRunStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePlanRunStep">
+      <soap:operation soapAction="http://tempuri.org/IWFService/UpdatePlanRunStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTaskHistory">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetAllTaskHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskHistoryByExecutionUser">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetTaskHistoryByExecutionUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTaskHistory">
+      <soap:operation soapAction="http://tempuri.org/IWFService/AddTaskHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTaskHistory">
+      <soap:operation soapAction="http://tempuri.org/IWFService/UpdateTaskHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanCurrentStepByPlanType">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetPlanCurrentStepByPlanType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanAndPlanRun">
+      <soap:operation soapAction="http://tempuri.org/IWFService/GetPlanAndPlanRun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WFService">
+    <wsdl:port name="BasicHttpBinding_IWFService" binding="tns:BasicHttpBinding_IWFService">
+      <soap:address location="http://192.168.0.250:8888/WFService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
