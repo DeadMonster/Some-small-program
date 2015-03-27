@@ -1,0 +1,52 @@
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\MainWindow.baml
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\MainWindow.g.cs
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\App.g.cs
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\UControl_MarkupCompile.cache
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\UControl.g.resources
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\UControl.Properties.Resources.resources
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\UControl.csproj.GenerateResource.Cache
+D:\Documents\GitHub\Some-small-program\UControl\UControl\bin\Debug\UControl.exe
+D:\Documents\GitHub\Some-small-program\UControl\UControl\bin\Debug\UControl.pdb
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\UControl.exe
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\UControl.pdb
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\Set.baml
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\Set.g.cs
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\Carbine.baml
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\Carbine.g.cs
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\CarDev.baml
+D:\Documents\GitHub\Some-small-program\UControl\UControl\obj\x86\Debug\CarDev.g.cs
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.exe
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.pdb
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\bin\Debug\UControl.exe
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\bin\Debug\UControl.pdb
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\Carbine.baml
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\CarDev.baml
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\MainWindow.baml
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\Set.baml
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\Carbine.g.cs
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\CarDev.g.cs
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\MainWindow.g.cs
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\Set.g.cs
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\App.g.cs
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl_MarkupCompile.cache
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.g.resources
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.Properties.Resources.resources
+D:\QQ信息记录\815424167\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.csproj.GenerateResource.Cache
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.exe
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.pdb
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\bin\Debug\UControl.exe
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\bin\Debug\UControl.pdb
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\Carbine.baml
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\CarDev.baml
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\MainWindow.baml
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\Set.baml
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\Carbine.g.cs
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\CarDev.g.cs
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\MainWindow.g.cs
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\Set.g.cs
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\App.g.cs
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl_MarkupCompile.cache
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.g.resources
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.Properties.Resources.resources
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\obj\x86\Debug\UControl.csproj.GenerateResource.Cache
+D:\Documents\Tencent Files\285264878\FileRecv\UControl(1)\UControl\bin\Debug\UControl.exe.config

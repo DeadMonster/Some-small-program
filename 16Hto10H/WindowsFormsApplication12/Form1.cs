@@ -34,11 +34,131 @@ namespace WindowsFormsApplication12
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int m = 1;
-            DateTime ll = DateTime.Now;
-            string json = wf.GetPlanAndPlanRun(m,null,ll,1);
+            int m = 10;
+            int ll = ToErJin(10);
+            byte[] index = { 1, 3, 8, 12, 16, 32, 255, 22,32,12,42,55,55 };
+            EXData(index);
+            //DateTime ll = DateTime.Now;
+            //string json = wf.GetPlanAndPlanRun(m,null,ll,1);
+            string j = Convert.ToString(m, 2);
         }
-
+        int[] state = new int[42];
+        int num;
+        void EXData(byte[] msg)
+        {
+            num = 0;
+            int[] index = { 1, 2, 4, 8, 16, 32, 64, 128 };
+            int oneToEight = Convert.ToInt32(msg[4]);
+            int nieToSixteen = Convert.ToInt32(msg[3]);
+            int seventeenToTwinteenFor = Convert.ToInt32(msg[6]);
+            int TwinteenFiveTothirtyTwo = Convert.ToInt32(msg[5]);
+            int thirtythreeToForTy = Convert.ToInt32(msg[8]);
+            int fortyoneToForTytwo = Convert.ToInt32(msg[7]);
+            for (int i = 0; i < 8; i++)
+            {
+                int result = oneToEight & index[i];
+                if (result !=0)
+                {
+                    state[num] = 1;
+                }
+                else
+                {
+                    state[num] = 0;
+                }
+                num++;
+            }
+            for (int i = 0; i < 8; i++)
+            {
+                int result = nieToSixteen & index[i];
+                if (result !=0)
+                {
+                    state[num] = 1;
+                }
+                else
+                {
+                    state[num] = 0;
+                }
+                num++;
+            }
+            for (int i = 0; i < 8; i++)
+            {
+                int result = seventeenToTwinteenFor & index[i];
+                if (result != 0)
+                {
+                    state[num] = 1;
+                }
+                else
+                {
+                    state[num] = 0;
+                }
+                num++;
+            }
+            for (int i = 0; i < 8; i++)
+            {
+                int result = TwinteenFiveTothirtyTwo & index[i];
+                if (result != 0)
+                {
+                    state[num] = 1;
+                }
+                else
+                {
+                    state[num] = 0;
+                }
+                num++;
+            }
+            for (int i = 0; i < 8; i++)
+            {
+                int result = thirtythreeToForTy & index[i];
+                if (result != 0)
+                {
+                    state[num] = 1;
+                }
+                else
+                {
+                    state[num] = 0;
+                }
+                num++;
+            }
+            for (int i = 6; i < 8; i++)
+            {
+                int result = fortyoneToForTytwo & index[i];
+                if (result != 0)
+                {
+                    state[num] = 1;
+                }
+                else
+                {
+                    state[num] = 0;
+                }
+                num++;
+            }
+        }
+        public static int ToErJin(int value)
+        {
+            int temp = 0;
+            int shang = 1;
+            int yushu;
+            while (shang != 0)
+            {
+                shang = (int)value / 2;
+                yushu = value % 2;
+                value = shang;
+                temp += yushu;
+                if (shang != 0)
+                {
+                    temp = temp * 10;
+                }
+            }
+            //最后将 temp 倒序
+            string tempStr = temp.ToString();
+            int tempLength = tempStr.Length;
+            string resultStr = string.Empty;
+            for (int i = 0; i < tempLength; i++)
+            {
+                resultStr = tempStr[i] + resultStr;
+            }
+            return int.Parse(resultStr);
+        }
         public void send_data(string duanxin_text)
         {
             string msg ="01 03 00 0B 00 01 F5 C8";

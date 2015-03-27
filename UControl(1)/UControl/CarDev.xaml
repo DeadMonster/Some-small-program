@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="UControl.CarDev"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             >
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="Black">
+            <TextBlock 
+  Name="textBlock" 
+  LineHeight="Auto"
+  TextAlignment="Left"
+  TextWrapping="Wrap"
+  Typography.NumeralStyle="OldStyle"
+  Typography.SlashedZero="True"
+                Opacity="100"
+>
+<TextBlock Name="CarName"></TextBlock>
+        </TextBlock>
+        </Border>
+    </Grid>
+</UserControl>
